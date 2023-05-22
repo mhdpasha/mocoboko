@@ -6,6 +6,7 @@
     <title>Mocoboko</title>
     <link rel="stylesheet" href="globalLayout.css">
     <link rel="icon" href="assets/icon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
@@ -62,23 +63,23 @@
     </section>
 
     <section> 
-        <h3 class="text-center fw-bolder" style="margin: 220px 0 60px 0;">FEATURED PRODUCT</h3>
+        <h3 class="text-center fw-bolder" style="margin: 220px 0 60px 0;" data-aos="fade-down" data-aos-once="true">FEATURED PRODUCT</h3>
         <section class="container d-flex justify-content-between align-items-stretch shrink-0" style="padding: 0 99px 0 99px;" id="responsive">
-        <div class="card" style="width: 18rem;" id="card">
+        <div class="card" style="width: 18rem;" id="card" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in" data-aos-once="true">
             <img src="assets/card1.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 style="margin-bottom: 12px; margin-top: 5px; color: #fff;">Grey Hoodie <span class="badge rounded-pill bg-light text-bg-light mx-1">5.0 ★</span></h5>
                 <p class="card-text" style="color: #D3D3D4;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;" id="card">
+        <div class="card" style="width: 18rem;" id="card" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in" data-aos-once="true">
             <img src="assets/card2.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 style="margin-bottom: 12px; margin-top: 5px; color: #fff;">Leather Jacket <span class="badge rounded-pill bg-light text-bg-light mx-1">4.8 ★</span></h5>
                 <p class="card-text" style="color: #D3D3D4;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;" id="card">
+          <div class="card" style="width: 18rem;" id="card" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in" data-aos-once="true">
             <img src="assets/card3.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 style="margin-bottom: 12px; margin-top: 5px; color: #fff;">Stripe T-Shirt <span class="badge rounded-pill bg-light text-bg-light mx-1">4.6 ★</span></h5>
@@ -90,4 +91,8 @@
 </main>
 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init()
+</script>
 </html>
