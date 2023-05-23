@@ -64,6 +64,10 @@ img {
   max-height: 440px;
 }
 
+#review > div {
+  user-select: none;
+}
+
 @media screen and (max-width: 992px) {
     #responsive {
       flex-direction: column;
