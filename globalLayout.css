@@ -37,12 +37,25 @@ body{
     color:white
 }
 
+img {
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 #card {
     transition: 0.3s ease;
 }
 
 #card:hover {
     scale: 1.05;
+}
+
+#buttonPointer {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
