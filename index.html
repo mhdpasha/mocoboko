@@ -45,7 +45,7 @@
     </div>
 </nav>
 <main class="container shrink-0 mt-0">
-    <section class="container d-flex justify-content-evenly align-items-center shrink-0 mx-4 mt-5" id="responsive">
+    <section class="container d-flex justify-content-evenly align-items-center shrink-0 mx-4 mt-5" id="responsive" name="hero">
     <div class="container px-5 mt-5">
         <h1 class="display-5 fw-bold lh-1 mb-3" id="texth1">Belanja mudah, <br>ekspor dan impor</h1>
         <br>
@@ -62,7 +62,7 @@
     </div>
     </section>
 
-    <section> 
+    <section name="card"> 
         <h3 class="text-center fw-bolder" style="margin: 220px 0 60px 0;" data-aos="fade-down" data-aos-once="true">FEATURED PRODUCT</h3>
         <section class="container d-flex justify-content-between align-items-stretch shrink-0" style="padding: 0 99px 0 99px;" id="responsive">
         <div class="card" style="width: 18rem;" id="card" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in" data-aos-once="true">
@@ -88,9 +88,59 @@
           </div>
         </section>
     </section>
+
+    <section name="review" style="margin: 220px 100px 0">
+        <div class="container d-flex justify-content-between align-items-top">
+            <left-side>
+                <h3 class="text-center fw-bolder mb-5"> Let's see their review.</h3>
+                <div id="lineAnimation"></div>
+            </left-side>
+            <right-side>
+                <div class="card mb-5" style="width: 18rem;">
+                    <div class="card-body">
+                        <profile-pic class="d-flex justify-content-evenly align-items-center mt-2">
+                            <img src="assets/profile1.png" alt="asd" style="aspect-ratio: 1/1; width: 55px; border-radius: 20px; ">
+                            <div>
+                                <h5 class="card-title">Nickotine Ayub</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Pelajar Pancasila</h6>
+                            </div>
+                        </profile-pic>
+                      <p class="card-text text-center mt-4 mb-2">"Pengiriman cepat, lumayan ngebantu lah buat saya sebagai pelajar."</p>
+                    </div>
+                  </div>
+
+                <div class="card mb-5" style="width: 18rem;">
+                    <div class="card-body">
+                        <profile-pic class="d-flex justify-content-evenly align-items-center mt-2">
+                            <img src="assets/profile 2.png" alt="asd" style="aspect-ratio: 1/1; width: 55px; border-radius: 20px; ">
+                            <div>
+                                <h5 class="card-title">Agas bin Bogor</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Calon Jenazah</h6>
+                            </div>
+                        </profile-pic>
+                      <p class="card-text text-center mt-4 mb-2">"Bahan nyaman dipakai, tidak gerah dan gatal saat dikubur."</p>
+                    </div>
+                  </div>
+
+                <div class="card mb-5" style="width: 18rem;">
+                    <div class="card-body">
+                        <profile-pic class="d-flex justify-content-evenly align-items-center mt-2">
+                            <img src="assets/profile 3.png" alt="asd" style="aspect-ratio: 1/1; width: 55px; border-radius: 20px; ">
+                            <div>
+                                <h5 class="card-title">Paldi anak baik</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Pegawai Intern</h6>
+                            </div>
+                        </profile-pic>
+                      <p class="card-text text-center mt-4 mb-2">"Awalnya ga percaya. ternyata beneran bonus avanza."</p>
+                    </div>
+                  </div>
+            </right-side>
+        </div>
+    </section>
 </main>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="app.js"></script>
 </html>

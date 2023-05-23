@@ -23,6 +23,7 @@
 
 * {
     color: #ffffff;
+    /* border: 1px solid white */
 }
 
 html {
@@ -55,6 +56,12 @@ img {
 
 #buttonPointer {
   cursor: pointer;
+}
+
+#lineAnimation {
+  margin-left: 20px;
+  border-left: 2px dashed white;
+  max-height: 200px;
 }
 
 @media screen and (max-width: 992px) {
