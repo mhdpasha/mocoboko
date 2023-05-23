@@ -9,7 +9,7 @@ const scrollPage = () => {
   return (docST + bodyST) / (docSH - docCH) * 100
 }
 window.onscroll = () => {
-    lineAnimation.seek((scrollPage() / 210) * lineAnimation.duration);
+    lineAnimation.seek((scrollPage() / 110) * lineAnimation.duration);
 };
 
 const lineAnimation = anime({
