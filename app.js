@@ -10,7 +10,7 @@ const scrollPage = () => {
 }
 window.onscroll = () => {
     lineAnimation.seek((scrollPage() / 110) * lineAnimation.duration)
-};
+}
 
 const lineAnimation = anime({
     targets: '#lineAnimation',
@@ -18,4 +18,4 @@ const lineAnimation = anime({
     easing: 'easeInOutQuart',
     direction: 'alternate',
     autoplay: false,
-});
+})
