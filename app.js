@@ -1,15 +1,15 @@
 AOS.init()
 
 const scrollPage = () => {
-    const bodyST = document.body.scrollTop;
-    const docST = document.documentElement.scrollTop;
-    const docSH = document.documentElement.scrollHeight;
-    const docCH = document.documentElement.clientHeight;
+    const bodyST = document.body.scrollTop
+    const docST = document.documentElement.scrollTop
+    const docSH = document.documentElement.scrollHeight
+    const docCH = document.documentElement.clientHeight
 
   return (docST + bodyST) / (docSH - docCH) * 100
 }
 window.onscroll = () => {
-    lineAnimation.seek((scrollPage() / 110) * lineAnimation.duration);
+    lineAnimation.seek((scrollPage() / 110) * lineAnimation.duration)
 };
 
 const lineAnimation = anime({
