@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mocoboko</title>
+    <title>Mocoboko | Products</title>
     <link rel="icon" href="assets/icon.png">
     <link rel="stylesheet" href="globalLayout.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -35,15 +35,15 @@
                     Kategori
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="login.html">Lokal</a></li>
-                        <li><a class="dropdown-item" href="login.html">Global</a></li>
+                      <li><a class="dropdown-item" href="#keyboard">Keyboard</a></li>
+                        <li><a class="dropdown-item" href="#switch">Switch</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="login.html">Daftar Toko</a></li>
+                        <li><a class="dropdown-item" href="https://wa.me/+6285777511106">Custom Keyboard</a></li>
                     </ul>
                 </li>
             </ul>
             <form class="d-flex" role="search">
-              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <button class="btn btn-outline-light me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="buttonNav">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
@@ -52,20 +52,126 @@
                   <path d="M6 5l14 1l-1 7h-13"></path>
                </svg>
               </button>
+
+              <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="buttonNav">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+               </svg>
+              </button>
             </form>
         </div>
     </div>
 </nav>
+
 <main class="container shrink-0 mt-0">
+
+    <section id="modal">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Account Center</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="assets/profile5.png" alt="pfp" style="border-radius: 20px; aspect-ratio: 1/1; width: 150px;">
+              <br><br>
+              <h4>Napi Pemula</h4>
+              <h6 class="text-secondary">Basic User</h6>
+            </div>
+            <div class="modal-footer">
+              <a href="index.html">
+                <button type="button" class="btn btn-danger">Log Out</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="offcanvas">
-      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cart</h5>
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <p>Total Buy :</p>
+          <p class="text-secondary fw-bold">Items you buy</p>
           
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/card1.png" class="img-fluid rounded-start" alt="..." style="object-fit: cover;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Cherry MX Blue</h5>
+                  <h6 class="text-secondary">Rp 5K</h6>
+                  <div class="d-flex">
+                    <input id="total-count" type="text" class="form-control" id="exampleFormControlInput1" value="20">
+                    <button id="decrement" class="btn btn-outline-warning ms-2" style="min-width: 36px;">-</button>
+                    <button id="increment" class="btn btn-outline-warning ms-2">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/card2.png" class="img-fluid rounded-start" alt="..." style="object-fit: cover;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Cherry MX Red</h5>
+                  <h6 class="text-secondary">Rp 10K</h6>
+                  <div class="d-flex">
+                    <input id="total-count" type="text" class="form-control" id="exampleFormControlInput1" value="15">
+                    <button id="decrement" class="btn btn-outline-warning ms-2" style="min-width: 36px;">-</button>
+                    <button id="increment" class="btn btn-outline-warning ms-2">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/keyboard1.png" class="img-fluid rounded-start" alt="..." style="object-fit: cover;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Rexus Daxa M82</h5>
+                  <h6 class="text-secondary">Rp 1.499K</h6>
+                  <div class="d-flex">
+                    <input id="total-count" type="text" class="form-control" id="exampleFormControlInput1" value="1">
+                    <button id="decrement" class="btn btn-outline-warning ms-2" style="min-width: 36px;">-</button>
+                    <button id="increment" class="btn btn-outline-warning ms-2">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br><br><br><br><br>
+
+          
+          <hr class="text-secondary">
+          <div class="container d-flex">
+            <small class="text-secondary fw-bolder">Subtotal :</small>
+            <small class="text fw-bolder" style="margin-left: 200px;">Rp 1.749K</small>
+          </div>
+          <a class="mt-4 d-grid gap-2" href="payment.html" id="buttonPointer">
+            <button class="btn btn-warning btn-block fa-lg fw-medium d-grid gap-2" type="button">
+              Checkout
+            </button>
+          </a>
+
         </div>
       </div>
     </section>
@@ -75,13 +181,19 @@
         <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
-              <img src="assets/carousel1.png" class="d-block w-100" alt="...">
+              <a href="productDetails.html">
+                <img src="assets/carousel3.png" class="d-block w-100" alt="...">
+              </a>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="assets/carousel1.png" class="d-block w-100" alt="...">
+              <a href="productDetails.html">
+                <img src="assets/carousel1.png" class="d-block w-100" alt="...">
+              </a>
             </div>
             <div class="carousel-item">
-              <img src="assets/carousel1.png" class="d-block w-100" alt="...">
+              <a href="productDetails.html">
+                <img src="assets/carousel2.png" class="d-block w-100" alt="...">
+              </a>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -98,67 +210,126 @@
 
     <!-- lINE FILTER DKK -->
 
-    <section id="product" sty>
-      <product-display-1 class="container d-flex justify-content-between align-items-center">
+    <section id="keyboard" >
+      <div class="container d-flex">
+        <h2>
+          Mechanical Keyboard
+        </h2>
+        <form class="d-flex" role="search" style="margin-left: 650px;" action="product.html">
+          <input class="form-control me-2 pe-5" type="search" placeholder="Cari produk" aria-label="Search">
+          <button class="btn btn-outline-light text-secondary-emphasis" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+              <path d="M21 21l-6 -6"></path>
+           </svg>
+          </button>
+        </form>
+
+      </div>
+      <hr class="text-secondary" style="margin: 20px 0 50px 0">
+
+      <product-display-1 class="container d-flex justify-content-between align-items-center" id="cardProduk">
         <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
-          <img src="assets/card1.png" class="card-img-top" alt="...">
+          <img src="assets/keyboard1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Rexus DAXA M82<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 1.49K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
         <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
-          <img src="assets/card1.png" class="card-img-top" alt="...">
+          <img src="assets/keyboard2.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Fantech MAXFIT<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 560K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
         <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
-          <img src="assets/card1.png" class="card-img-top" alt="...">
+          <img src="assets/keyboard3.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Redragon FIZZ<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 365K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
         <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
-          <img src="assets/card1.png" class="card-img-top" alt="...">
+          <img src="assets/keyboard4.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Gamen Titan III<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 270K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
       </product-display-1>
+    </section>
 
-      <product-display-2 class="container d-flex justify-content-between align-items-center mt-5">
+    
+    <section id="switch" style="margin-top: 150px;">
+      <div class="container d-flex">
+        <h2>
+          Mechanical Switch
+        </h2>
+
+      </div>
+      <hr class="text-secondary" style="margin: 20px 0 50px 0">
+
+      <product-display-1 class="container d-flex justify-content-between align-items-center" id="cardProduk">
         <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
           <img src="assets/card1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Cherry MX Blue<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 5K</span></h5>
+            <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
+          </div>
+        </a>
+        <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
+          <img src="assets/card2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;">Cherry MX Red<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 10K</span></h5>
+            <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
+          </div>
+        </a>
+        <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
+          <img src="assets/card3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;">Cherry MX Clear<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 10K</span></h5>
+            <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
+          </div>
+        </a>
+        <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
+          <img src="assets/card4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;">Cherry MX Black<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 10K</span></h5>
+            <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
+          </div>
+        </a>
+      </product-display-1>
+      <product-display-2 class="container d-flex justify-content-between align-items-center mt-5" id="cardProduk">
+        <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
+          <img src="assets/card5.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;">Cherry MX Brown<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 5K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
 
         <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
-          <img src="assets/card1.png" class="card-img-top" alt="...">
+          <img src="assets/card6.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Cherry MX Green<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 12K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
 
         <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
-          <img src="assets/card1.png" class="card-img-top" alt="...">
+          <img src="assets/card7.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Cherry MX White<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 15K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
 
-        <a class="card" style="width: 18rem;" id="card" href="productDetails.html">
-          <img src="assets/card1.png" class="card-img-top" alt="...">
+        <a class="card" style="width: 18rem;" id="card" href="productSwitch.html">
+          <img src="assets/card8.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="color: white;">Grey Hoodie <span style="color: black; margin-left: 5px;" class="badge bg-white">$50 USD</span></h5>
+            <h5 class="card-title" style="color: white;">Cherry MX Silent<span style="color: black; margin-left: 10px;" class="badge bg-white">Rp 15K</span></h5>
             <p class="card-text mt-3 text-secondary">Classic hoodie with smooth and soft cotton finishing. Gluten free</p>
           </div>
         </a>
@@ -245,6 +416,7 @@
           </div>
     </section>
 </main>
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

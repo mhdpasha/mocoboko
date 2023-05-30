@@ -56,6 +56,14 @@ svg:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #card {
     transition: 0.3s ease;
     text-decoration: none;
@@ -73,7 +81,7 @@ svg:hover {
 #lineAnimation {
   margin-left: 130px;
   border-left: 2px dashed white;
-  max-height: 420px;
+  max-height: 560px;
 }
 
 #review > div {
@@ -90,6 +98,33 @@ svg:hover {
 
 @media screen and (max-width: 992px) {
     #responsive {
+      flex-direction: column;
+    }
+    #heroLeft {
+      margin-left: 30px;
+    }
+    #heroImg {
+      margin-left: 0;
+    }
+    #textHero {
+      text-align: center;
+    }
+    #card {
+      margin-top: 60px;
+    }
+    #sectionCard {
+      margin-left: 50px;
+    }
+    #leftSide {
+      display: none;
+    }
+    #rightSide {
+      flex-direction: row;
+    }
+    #sectionReview {
+      margin-right: 200px;
+    }
+    #cardProduk {
       flex-direction: column;
     }
 }

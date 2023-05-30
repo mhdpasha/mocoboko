@@ -9,7 +9,8 @@ const scrollPage = () => {
   return (docST + bodyST) / (docSH - docCH) * 100
 }
 window.onscroll = () => {
-    lineAnimation.seek((scrollPage() / 110) * lineAnimation.duration)
+    lineAnimation.seek((scrollPage() / 100) * lineAnimation.duration)
+    imgAnimation.seek((scrollPage() / 170) * imgAnimation.duration)
 }
 
 const lineAnimation = anime({
@@ -19,3 +20,10 @@ const lineAnimation = anime({
     direction: 'alternate',
     autoplay: false,
 })
+
+const imgAnimation = anime({
+    targets: '#imgAnimation',
+    rotate: ['0deg','360deg'],
+    direction: 'normal',
+})
+
