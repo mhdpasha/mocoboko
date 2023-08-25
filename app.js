@@ -27,3 +27,16 @@ const imgAnimation = anime({
     direction: 'normal',
 })
 
+count = (target, handler) => {
+    let value = parseInt(document.getElementById(target).value)
+    value = isNaN(value) ? 0 : value
+
+    if(handler == '+') {
+        value++
+        document.getElementById(target).value = value
+    } 
+    else if(handler == '-') {
+        value--
+        document.getElementById(target).value = value;
+    }
+}
