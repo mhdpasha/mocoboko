@@ -37,6 +37,6 @@ count = (target, handler) => {
     } 
     else if(handler == '-') {
         value--
-        document.getElementById(target).value = value;
+        document.getElementById(target).value = value
     }
 }
